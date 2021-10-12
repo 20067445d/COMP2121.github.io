@@ -1,0 +1,10 @@
+/* Hover effect of pictures*/
+
+.image{
+    transition: all 0.5s;
+}
+
+.image:hover{
+    cursor:crosshair;
+    transform: scale(1.05);
+}

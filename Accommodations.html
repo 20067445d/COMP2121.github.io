@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <link rel ="stylesheet"  href="Assignment.css">
+    <style>
+        h1{
+            font-size:30px;
+            text-align: left; 
+            line-height: 40px; 
+            padding-top: 25px;
+        }
+        span{
+            position: relative;
+            display: inline-flex;
+            width: 180px;
+            height: 55px;
+            margin: 0 10px;
+            perspective: 1000px;
+        }
+        span a{
+            font-size: 19px;
+            letter-spacing: 1px;
+            transform-style: preserve-3d;
+            transform: translateZ(-25px);
+            transition: transform .25s;
+            font-family: 'Montserrat', sans-serif;
+        }
+        span a:before,
+        span a:after{
+            position: absolute;
+            content: "BUTTON";
+            height: 55px;
+            width: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 5px solid black;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+        span a:before{
+            color: #fff;
+            background: #000;
+            transform: rotateY(0deg) translateZ(25px);
+        }
+        span a:after{
+            color: #000;
+            transform: rotateX(90deg) translateZ(25px);
+        }
+        span a:hover{
+             transform: translateZ(-25px) rotateX(-90deg);
+        }       
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h2>Accommodations</h2>
+</header>
+      
+<section>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="Travel.html">Travel</a></li>
+            <li><a href="Transportation.html">Transportation</a></li>
+            <li><a href="Food.html">Food</a></li>
+            <li><a href="Shopping.html">Shopping</a></li>
+            <li><a href="Accommodations.html" style="background-color: #555">Accommodations</a></li>
+            <li><a href="Accommodations-HotelRecommended.html" style="padding-left: 60px;">-Hotel recommended</a></li>
+            
+
+            <li><a href="About City.html">About City</a></li>
+        </ul>
+    </nav>
+        
+    <article>
+        <table style="width:100%;">
+            <tr>
+                <th style="padding-left: 20px;"><h1>Looking for accommodations?</h1>
+                    <h1>You can book hotels on <span><a href="https://hotels.com" target="_blank"></a></span></h1>
+                    <h1>and check the designated hotel list for quarantine <span><a href="https://www.coronavirus.gov.hk/pdf/designated-hotel-list-v5_tc.pdf" target="_blank"></a></span></h1>
+                </th>
+                <th><img src="img/Hotel.png" style="width:370px;text-align:right;"><img></th>
+                
+            </tr>
+        </table>
+    </article>
+</section>
+      
+
+</body>
+</html>
+
