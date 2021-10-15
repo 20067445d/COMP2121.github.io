@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1{
+            font-size:30px;
+        }
+
+        button {                        /*Reference: https://codepen.io/batuhanbas/pen/KKVmOym*/
+            cursor: pointer;
+            font-size: 25px;
+            padding: 25px 75px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 600;
+            outline: none;
+            border: none;
+        }
+
+        .stripe {
+            border-radius: 40px;
+            border: 2px solid #ffffff;
+            color: #ffffff;
+            background-image: repeating-linear-gradient(90deg, 
+            rgba(20, 25, 25, 0.6),
+            rgba(25, 25, 25, 0.6) 10%, 
+            #4c4c4c 10%, #4c4c4c 20%);
+            background-size: 100%;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .stripe:hover {
+            background-position: 150px;
+        }
+    </style>
+</head>
+<body>
+<a href="Food-WhereToEat.html"><button class="stripe">Back</button></a>
+<div style="margin-top: 20px;">
+    <img src="img/FoodCourt1.jpg" style="width:500px; height:401px;"><img>
+    <h1>K11 Musea Food Playground</h1>
+</div>
+<div style="margin-top: 20px;">
+    <img src="img/FoodCourt2.jpg" style="width:500px;"><img>
+    <h1>Citygate Outlets Food Opera</h1>
+</div>
+
+
+</body>
+</html>
